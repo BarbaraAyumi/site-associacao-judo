@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Associação Valentim</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }  
+
+    form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 0.7rem 2rem;
+      background-color: #005fa3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #003e6b;
+    }
+
+    .contato-info {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .contato-info a {
+      display: inline-block;
+      margin: 0.3rem;
+      color: #005fa3;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .contato-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contato-info i {
+      margin-right: 8px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 0 2rem;
+    }
+
+    .nav-buttons a {
+      background-color: #005fa3;
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .nav-buttons a:hover {
+      transform: scale(1.1);
+      background-color: #003e6b;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagens/logo_judo.jpeg" alt="Logo da Associação de Judô" />
+    </div>
+    <h1>Contato</h1>
+  </header>
+
+  <!-- Formulário usando FormSubmit -->
+  <form action="https://formsubmit.co/bah.ayumi@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://associacaovalentim.org.br/obrigado.html">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="contato-info">
+    <h2>Fale Conosco</h2>
+    <p>
+        📧 <a href="mailto:valentimjudo@gmail.com">valentimjudo@gmail.com</a>
+      </p>
+      
+    <p>
+        <a href="https://www.instagram.com/judo_valentim_sp?igsh=MWJpb2UyMXgwazR4aA==" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/share/1A5fjpx37N/" target="_blank">Facebook</a>
+    </p>
+    
+  </div>
+
+  <div class="nav-buttons">
+    <a href="aprenda.html" title="Aprenda Mais">⟵</a>
+    <a href="inicio.html" title="Ir para Início">⌂</a>
+  </div>
+</body>
+</html>
